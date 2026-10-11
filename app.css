@@ -10,6 +10,7 @@ body {
 }
 
 header {
+    position: relative;
     height: 754px;
     background-color: #F9F5E9;
 }
@@ -38,7 +39,37 @@ header nav ul#pages-nav li a{
     font-size: 16px;
 }
 
+#new-rel {
+    background-color: #FFE1A6;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 0;
+}
+
+section h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#game-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*.rect{
+    width: 35%;
+    height: 100%;
+    background-color: #CD4A4A;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    right: 0; 
+    transform: translateY(-50%);
+}*/
+
 h1 {
+    margin-top: 0;
     font-size: 48px;
     margin-left: 10%;
     margin-right: 10%;
@@ -48,12 +79,14 @@ h2 {
     font-size: 30px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 0;
 }
 
 h3 {
     font-size: 20px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 0;
 }
 
 h4 {
@@ -61,4 +94,5 @@ h4 {
     font-weight: 400;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 0;
 }
