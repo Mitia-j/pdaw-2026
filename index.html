@@ -2,26 +2,29 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Board games</title>
+        <title>PlayNook</title>
         <link rel="stylesheet" href="app.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="index.html"><img src="img/logo.png" alt="Logo" id="logo"></a>
+        <!--Navigation bar-->
+        <nav>
+                <a href="index.html" id="logo">
+                    <img src="img/logo.png" alt="Logo" id="logo-img">
+                    <p id="logo-text">PlayNook</p>
+                </a>
                 <ul id="pages-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="catalog.html">Catalog</a></li>
                     <li><a href="favorites.html">Favorites</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
                 </ul>
-            </nav>
+        </nav>
+        <header>
             <h1>Discover the best board games of all time!</h1>
             <h4>From card and puzzle games to strategy and role-playing games.</h4>
-            <!-- <div class="rect"></div> -->
         </header>
 
         <!--New releases-->
@@ -53,14 +56,41 @@
         </section>
 
         <!--Reviews-->
-        <section>
+        <section id="reviews">
             <h2>Reviews & How to Play</h2>
-            
+            <a href="reviews.html">
+                <article id="rev-block">
+                    <img src="img/pic9628641.webp" alt="Drillers">
+                    <div id="rev-text">
+                        <h3>Drillers</h3>
+                        <h4>Greenwood is a strategy game from Capstone Games, where the peninsula is advertised as a sanctuary for magical animals but is secretly run by druids. As Primal Spirits, you recruit allies, cast spells, strengthen your defenses and break the captive beasts out onto submarines. The game plays over three nights for 1-4 players and takes 40 to 160 minutes. One reviewer found it smooth and engaging but not entirely fresh.</h4>
+                    </div>
+                </article>
+            </a>
+            <a href="reviews.html">
+                <article id="rev-block">
+                    <img src="img/-60.webp" alt="-60°">
+                    <div id="rev-text">
+                        <h3>-60°</h3>
+                        <h4>-60° is a cooperative game from Capstone Games, where players lead
+    an expedition to the meteorite impact site in Antarctica. Players must manage their resources and make strategic decisions to survive the harsh conditions and complete their mission. The game is designed for 1-4 players and takes about 60-90 minutes to play. One reviewer praised its immersive theme and challenging gameplay.</h4>
+                    </div>
+                </article>
+            </a>
+            <a href="reviews.html">
+                <article id="rev-block">
+                    <img src="img/pic9564394.webp" alt="Greenwood">
+                    <div id="rev-text">
+                        <h3>Greenwood</h3>
+                        <h4>Greenwood is a strategy game from Capstone Games, where the peninsula is advertised as a sanctuary for magical animals but is secretly run by druids. As Primal Spirits, you recruit allies, cast spells, strengthen your defenses and break the captive beasts out onto submarines. The game plays over three nights for 1-4 players and takes 40 to 160 minutes. One reviewer found it smooth and engaging but not entirely fresh.</h4>
+                    </div>
+                </article>
+            </a>
         </section>
 
-        <!--Reviews-->
-        <section>
+        <!--Footer-->
+        <footer>
             
-        </section>
+        </footer>
     </body>
 </html>
