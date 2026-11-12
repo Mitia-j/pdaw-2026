@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    position: relative;
 }
 
 h1 {
@@ -54,6 +55,29 @@ header {
     padding-bottom: 180px;
 }
 
+.rect1 {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #FF5958;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.rect2 {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #FF5958;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+}
+
 nav {
     display: flex;
     padding: 10px 10%;
@@ -66,6 +90,7 @@ nav {
 
 header h1 {
     padding-top: 140px;
+    padding-bottom: 20px;
     max-width: 742px;
 }
 
@@ -74,7 +99,6 @@ header h1 {
     list-style: none;
     align-items: center;
     gap: 4em;
-
 }
 
 nav ul#pages-nav li a{
@@ -83,6 +107,27 @@ nav ul#pages-nav li a{
     font-size: 16px;
 }
 
+.contact {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 8px 19px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF5958;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 40px;
+    align-self: center;
+}
+
+.head-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+    transform: translateX(-34%);
+}
 
 
 #new-rel {
@@ -174,4 +219,54 @@ article h4 {
 div#rev-text h3 {
     margin: 0;
     padding: 0;
+}
+
+
+
+footer {
+    background-color: #FFE1A6;
+    padding: 100px 10% 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #131313;
+    margin: 0;
+    padding: 0 0 14px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 16px;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 12px 0;
+}
+
+#first-col-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-bottom: 1em;
+
+}
+
+div#first-col-logo p {
+    align-self: center;
+}
+
+#quick-links {
+    padding-left: 200px;
 }
