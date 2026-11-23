@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PlayNook</title>
         <link rel="stylesheet" href="app.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,24 +12,30 @@
     <body>
         <!--Navigation bar-->
         <nav>
-                <a href="index.html" id="logo">
-                    <img src="img/logo.png" alt="Logo" id="logo-img">
-                    <p id="logo-text">PlayNook</p>
-                </a>
-                <ul id="pages-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="catalog.html">Catalog</a></li>
-                    <li><a href="favorites.html">Favorites</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                </ul>
-                <button class="contact">Contact us</button>
-                <div class="rect1"></div>
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" alt="Logo" id="logo-img">
+                <p id="logo-text">PlayNook</p>
+            </a>
+            <input type="checkbox" id="menu-tgl">
+            <label for="menu-tgl" class="burg-m">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul id="pages-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+            <button class="contact">Contact us</button>
+            <div class="rect1"></div>
         </nav>
         <header>
             <h1>Discover the best board games of all time!</h1>
             <h4>From card and puzzle games to strategy and role-playing games.</h4>
             <div class="rect2"></div>
-            <img src="img/head-im.png" alt="Board game pieces" class="head-img">
+            <!-- <img src="img/head-im.png" alt="Board game pieces" class="head-img"> -->
         </header>
 
         <!--New releases-->
