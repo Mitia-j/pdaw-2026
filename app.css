@@ -6,37 +6,56 @@ body {
 }
 
 h1 {
-    font-size: 48px;
-    margin: 0 10%;
+    margin: 0;
+    font-size: 30px;
+    padding: 0 18px;
     color: #131313;
 }
 
 h2 {
-    font-size: 30px;
-    margin: 0 10%;
+    margin: 0;
+    font-size: 20px;
+    padding: 0 18px;
     color: #131313;
 }
 
 h3 {
-    font-size: 20px;
-    margin: 0 10%;
+    margin: 0;
+    font-size: 18px;
+    padding: 0 18px;
 }
 
 h4 {
-    font-size: 16px;
+    margin: 0;
+    font-size: 13px;
     font-weight: 400;
-    margin: 0 10%;
+    padding: 0 18px;
     color: #4A4A4A;
 }
- 
+
 nav {
     display: flex;
     padding: 10px 5%;
     justify-content: space-between;
+    align-items: start;
     position: sticky;
     top: 0;
     z-index: 100;
     background: #F9F5E9;
+}
+
+header {
+    margin: 0;
+    background: #F9F5E9;
+    padding: 1.5em 0;
+}
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
 }
 
 #logo-img {
@@ -45,7 +64,19 @@ nav {
 }
 
 #logo-text {
-    display: none;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    color: #131313;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    gap: 1em;
+    padding-top: 9px;
 }
 
 #menu-tgl {
@@ -59,7 +90,6 @@ nav {
     width: 30px;
     height: 25px;
     cursor: pointer;
-    margin: 15px auto;
 }
 
 .burg-m span {
@@ -69,12 +99,13 @@ nav {
     background-color: #FF5958;
 }
 
-#pages-nav{
-        display: none;
-        flex-direction: column;
-        list-style: none;
-        align-items: center;
-        gap: 1em;
+#pages-nav {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    align-items: end;
+    justify-content: center;
+    gap: 1em;
 }
 
 #menu-tgl:checked ~ #pages-nav {
@@ -89,27 +120,66 @@ nav {
     display: none;
 }
 
-#game-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    padding: 0 10%;
-    padding-bottom: 60px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
 a {
     text-decoration: none;
-    color: inherit
+    color: inherit;
 }
 
 
+
+/*New releases section*/
+#game-cards {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 1em;
+}
+
+#game-cards article {
+    justify-content: center;
+}
+
+#game-cards article h4 {
+    text-align: left;
+}
+
+#game-cards article img{
+    height: auto;
+    width: 400px;
+}
+
+#new-rel {
+    padding: 2em 0;
+    background-color: #FFE1A6;
+}
+
+#new-rel article {
+    margin: 0 auto;
+}
+
+#new-rel article h3 {
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+#new-rel article h4 {
+    margin: 0;
+    text-align: left;
+    padding: 0;
+}
+
+
+
+/*Reviews section*/
+#reviews {
+    background-color: #F9F5E9;
+    padding-top: 2.5em;
+}
 
 #rev-block {
     display: flex;
@@ -119,6 +189,27 @@ a {
     align-items: center;
     padding: 0 1em 2em 1em;
 }
+
+#reviews img {
+    width: 300px;
+}
+
+
+
+footer {
+    background-color: #FFE1A6;
+
+}
+
+#desc {
+    padding-left: 1em;
+}
+
+#first-col-logo {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
 
 @media screen and (min-width: 600px) {
     .burg-m {
