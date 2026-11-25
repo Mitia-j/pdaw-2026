@@ -15,8 +15,9 @@ h1 {
 h2 {
     margin: 0;
     font-size: 20px;
-    padding: 0 18px;
+    padding: 0  0 0 18px;
     color: #131313;
+    text-align: center;
 }
 
 h3 {
@@ -48,6 +49,10 @@ header {
     margin: 0;
     background: #F9F5E9;
     padding: 1.5em 0;
+}
+
+header h4 {
+    text-align: left;
 }
 
 #logo {
@@ -124,19 +129,27 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/*---------------*/
 
 
 
 /*New releases section*/
+#new-rel {
+    padding: 2em 0;
+    background-color: #FFE1A6;
+}
+
+#new-rel h2,h4 {
+    text-align: center;
+}
+
 #game-cards {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 550px));
     gap: 1.5em;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-bottom: 30px;
-    padding-top: 1em;
+    padding: 30px 5em 1em 5em;
 }
 
 #game-cards article {
@@ -149,12 +162,7 @@ a {
 
 #game-cards article img{
     height: auto;
-    width: 400px;
-}
-
-#new-rel {
-    padding: 2em 0;
-    background-color: #FFE1A6;
+    width: 100%;
 }
 
 #new-rel article {
@@ -172,6 +180,7 @@ a {
     text-align: left;
     padding: 0;
 }
+/*---------------*/
 
 
 
@@ -190,12 +199,23 @@ a {
     padding: 0 1em 2em 1em;
 }
 
+#rev-block h4 {
+    text-align: left;
+    padding-left: 3em;
+}
+
+#rev-block h3 {
+    text-align: left;
+    padding-left: 3em;
+}
+
 #reviews img {
     width: 300px;
 }
+/*---------------*/
 
 
-
+/*Footer section*/
 footer {
     background-color: #FFE1A6;
 
@@ -210,6 +230,20 @@ footer {
     padding-left: 1em;
 }
 
+footer ul {
+    margin: 0;
+    padding-bottom: 2.5em;
+    list-style: none;
+}
+
+#col2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+#col2 p {
+    font-weight: 800;
+}
 
 @media screen and (min-width: 600px) {
     .burg-m {
@@ -368,6 +402,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
+        align-items: start;
         gap: 30px;
         width: 100%;
         padding-bottom: 60px;
