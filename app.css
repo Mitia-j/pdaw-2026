@@ -15,7 +15,7 @@ h1 {
 h2 {
     margin: 0;
     font-size: 20px;
-    padding: 0  0 0 18px;
+    padding: 0 0 0 18px;
     color: #131313;
     text-align: center;
 }
@@ -34,6 +34,9 @@ h4 {
     color: #4A4A4A;
 }
 
+
+
+/*Nav and header sections*/
 nav {
     display: flex;
     padding: 10px 5%;
@@ -65,7 +68,7 @@ header h4 {
 
 #logo-img {
     width: 65px;
-    height: auto;           
+    height: auto;
 }
 
 #logo-text {
@@ -113,7 +116,7 @@ header h4 {
     gap: 1em;
 }
 
-#menu-tgl:checked ~ #pages-nav {
+#menu-tgl:checked~#pages-nav {
     display: flex;
 }
 
@@ -139,8 +142,12 @@ a {
     background-color: #FFE1A6;
 }
 
-#new-rel h2,h4 {
+#new-rel h2, h4 {
     text-align: center;
+}
+
+#subt {
+    padding-top: 0.7em;
 }
 
 #game-cards {
@@ -160,7 +167,7 @@ a {
     text-align: left;
 }
 
-#game-cards article img{
+#game-cards article img {
     height: auto;
     width: 100%;
 }
@@ -199,14 +206,19 @@ a {
     padding: 0 1em 2em 1em;
 }
 
+#reviews h2 {
+    padding: 0;
+    padding-bottom: 2.5em;
+}
+
 #rev-block h4 {
     text-align: left;
-    padding-left: 3em;
+    padding-left: 7%;
 }
 
 #rev-block h3 {
     text-align: left;
-    padding-left: 3em;
+    padding-left: 7%;
 }
 
 #reviews img {
@@ -215,19 +227,20 @@ a {
 /*---------------*/
 
 
+
 /*Footer section*/
 footer {
     background-color: #FFE1A6;
-
 }
 
 #desc {
-    padding-left: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
 }
 
 #first-col-logo {
-    padding-top: 1em;
-    padding-left: 1em;
+    padding-top: 2.2em;
+    padding-left: 2.2em;
 }
 
 footer ul {
@@ -236,11 +249,16 @@ footer ul {
     list-style: none;
 }
 
+footer ul li {
+    padding: 0.5em 0;
+    white-space: nowrap;
+}
+
 #col2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
+
 #col2 p {
     font-weight: 800;
 }
@@ -284,7 +302,7 @@ footer ul {
 
     #logo-img {
         width: 100px;
-        height: auto;           
+        height: auto;
     }
 
     #logo-text {
@@ -340,7 +358,7 @@ footer ul {
         max-width: 742px;
     }
 
-    #pages-nav{
+    #pages-nav {
         display: flex;
         list-style: none;
         flex-direction: row;
@@ -348,7 +366,7 @@ footer ul {
         gap: 4em;
     }
 
-    nav ul#pages-nav li a{
+    nav ul#pages-nav li a {
         text-decoration: none;
         color: black;
         font-size: 16px;
@@ -467,7 +485,8 @@ footer ul {
         gap: 2em;
     }
 
-    div#rev-text h3 {
+    div#rev-text h3,
+    div#rev-text h4 {
         margin: 0;
         padding: 0;
     }
@@ -478,7 +497,7 @@ footer ul {
         background-color: #FFE1A6;
         padding: 100px 10% 70px 10%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 26% 44%;
     }
 
     footer ul {
@@ -487,9 +506,11 @@ footer ul {
         margin: 0;
     }
 
-    footer ul p {
+    footer ul li p {
+        display: flex;
         font-size: 18px;
         font-weight: 700;
+        white-space: nowrap;
         color: #131313;
         margin: 0;
         padding: 0 0 14px 0;
@@ -504,6 +525,7 @@ footer ul {
 
     footer ul li {
         padding: 12px 0;
+        white-space: nowrap;
     }
 
     #first-col-logo {
@@ -518,7 +540,13 @@ footer ul {
         align-self: center;
     }
 
-    #quick-links {
-        padding-left: 200px;
+    #col2 {
+        display: flex;
+        padding-left: 15em;
+        gap: 9em;
+    }
+
+    #desc {
+        flex-wrap: wrap;
     }
 }
